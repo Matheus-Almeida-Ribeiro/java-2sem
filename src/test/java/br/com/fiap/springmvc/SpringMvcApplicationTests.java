@@ -1,4 +1,4 @@
-package com.com.fiap.springmvc;
+package br.com.fiap.springmvc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

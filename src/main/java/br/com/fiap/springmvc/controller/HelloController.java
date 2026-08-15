@@ -1,4 +1,4 @@
-package com.com.fiap.springmvc.controller;
+package br.com.fiap.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

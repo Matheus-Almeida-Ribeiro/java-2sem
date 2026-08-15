@@ -1,4 +1,4 @@
-package com.com.fiap.springmvc.model;
+package br.com.fiap.springmvc.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
