@@ -20,8 +20,8 @@ public class LivroService {
 
     //CRUD
     public Livro create(Livro livro) {
-    //  Livro livro = new Livro();
-    //  BeanUtils.copyProperties(livroRequest, livro);
+        // Livro livro = new Livro();
+        //   BeanUtils.copyProperties(livroRequest, livro);
         return livroRepository.save(livro);
 
     }

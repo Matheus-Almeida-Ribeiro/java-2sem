@@ -17,15 +17,15 @@ public class Livro {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    @NotBlank(message = "O titulo é obrigatório")
+    @NotBlank(message = "O título é obrigatório")
     private String titulo;
-    @NotBlank(message = "O autor é obtigatório")
+    @NotBlank(message = "O autor é obrigatório")
     private String autor;
     @NotNull(message = "O gênero é obrigatório")
     private Genero genero;
     private Integer paginas;
     private String editora;
-    @Pattern(regexp = "^970\\d{7}$|970\\d{10}$") //ISBN 10 ou 13 iniciado em 970
+    @Pattern(regexp = "^970\\d{7}$|^970\\d{10}$", message = "ISBN em formato incorreto") //ISBN 10 ou 13 iniciado em 970
     private String isbn;
     private LocalDate dataPublicacao;
     private BigDecimal preco;
@@ -38,20 +38,20 @@ public class Livro {
         this.id = id;
     }
 
-    public String getAutor() {
-        return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
     public String getTitulo() {
         return titulo;
     }
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
     public Genero getGenero() {

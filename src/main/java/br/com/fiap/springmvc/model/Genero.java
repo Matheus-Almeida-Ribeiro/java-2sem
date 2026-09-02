@@ -4,14 +4,14 @@ public enum Genero {
     TERROR("Terror"),
     ROMANCE("Romance"),
     ACAO("Ação"),
-    SUSPENCE("Suspence"),
+    SUSPENSE("Suspense"),
     FICCAO_CIENTIFICA("Ficção Científica"),
     BIOGRAFIA("Biografia"),
     FILOSOFIA("Filosofia"),
     RELIGIOSO("Religioso"),
-    HISTORIA("Historia"),
-    CIENCIAS("Ciencia"),
-    DIDATICO("Didatico");
+    HISTORIA("História"),
+    CIENCIA("Ciência"),
+    DIDATICO("Didático");
 
     private final String descricao;
 
@@ -22,5 +22,4 @@ public enum Genero {
     public String getDescricao() {
         return descricao;
     }
-
 }
